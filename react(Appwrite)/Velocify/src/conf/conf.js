@@ -1,10 +1,10 @@
 const conf = {
-    appwriteUrl : String(import.meta.env.Vite_APPWRITE_URL),
-    appwriteProjectId : String(import.meta.env.Vite_PROJECT_ID),
-    appwriteBucketId : String(import.meta.env.Vite_BUCKET_ID),
-    appwriteDatabaseId : String(import.meta.env.Vite_DATABASE_ID),
-    appwriteCollectionId : String(import.meta.env.Vite_COLLECTION_ID),
-    
-}
-
-export default conf
+    appwriteUrl: import.meta.env.VITE_APPWRITE_URL,
+    appwriteProjectId: import.meta.env.VITE_APPWRITE_PROJECT_ID,
+    appwriteDatabaseId: import.meta.env.VITE_APPWRITE_DATABASE_ID,
+    appwritePostCollectionId: import.meta.env.VITE_APPWRITE_COLLECTION_ID,
+    appwriteBucketId: import.meta.env.VITE_APPWRITE_BUCKET_KEY,
+  };
+  
+  export default conf;
+  
