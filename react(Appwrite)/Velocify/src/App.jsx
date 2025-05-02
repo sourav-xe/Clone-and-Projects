@@ -5,6 +5,7 @@ import {login, logout} from './store/authSlice'
 import './App.css'
 import Header from './component/header/header'
 import Footer from './component/footer/footer'
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
@@ -34,9 +35,10 @@ function App() {
   return !loading ?  (
 
     <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
-      <div className='flex flex-col w-full'>
-        <header/>
-        <footer/>
+      <div className='block w-full'>
+        <Header/>
+        
+        <Footer/>
       </div>
     </div>
   ) : null
