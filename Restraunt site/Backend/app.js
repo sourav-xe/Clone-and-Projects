@@ -16,7 +16,7 @@ app.use(cors({
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/api/v1", reservationRoutes);
+app.use("/api/v1/reservation", reservationRoutes);
 
 dbconnection();
 
