@@ -1,33 +1,32 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
+const express = require('express')
+const mongoose = require('mongoose')
+const cors = require('cors')
+const path = require('path')
+const phoneRoutes = require('./routes/phoneRoutes')
+require('dotenv').config()
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+const app = express()
+const PORT = process.env.PORT || 5000
 
-mongoose.connect('mongodb+srv://sourav20kumar02:velocify06@velocify.ju51rzp.mongodb.net/velocify?retryWrites=true&w=majority&appName=velocify')
+// Middleware
+app.use(cors())
+app.use(express.json())
 
+// Serve uploaded images from /uploads (for local image uploads)
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
-const phoneSchema = new mongoose.Schema({ name: String, color: String, image: String, status: { type: String, default: 'Ordered' } });
-const Phone = mongoose.model('Phone', phoneSchema);
+// Routes
+app.use('/api/phones', phoneRoutes)
 
-app.post('/api/phones', async (req, res) => {
-  const phone = new Phone(req.body);
-  await phone.save();
-  res.status(201).send('Phone saved');
-});
-
-app.get('/api/phones', async (req, res) => {
-  const phones = await Phone.find();
-  res.json(phones);
-});
-
-app.patch('/api/phones/:id/status', async (req, res) => {
-  const { id } = req.params;
-  const { status } = req.body;
-  await Phone.findByIdAndUpdate(id, { status });
-  res.send('Status updated');
-});
-
-app.listen(5000, () => console.log('Server started on port 5000'));
+// Connect to MongoDB
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => {
+  console.log('✅ MongoDB connected')
+  app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`))
+})
+.catch(err => {
+  console.error('❌ MongoDB connection error:', err)
+})
