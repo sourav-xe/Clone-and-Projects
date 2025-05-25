@@ -118,7 +118,7 @@ export default function Offer() {
           </motion.p>
 
           <motion.button
-            onClick={() => navigate('/shoes')}
+            onClick={() => navigate('/shop')}
             whileHover={{ scale: 1.1, boxShadow: '0 0 15px 5px rgba(255, 0, 0, 0.6)' }}
             whileTap={{ scale: 0.95 }}
             className="px-10 py-4 bg-gradient-to-r from-red-700 to-black text-white text-lg font-black rounded-full shadow-[0_0_30px_rgba(255,0,0,0.5)] hover:shadow-[0_0_50px_rgba(255,0,0,0.7)] transition-all duration-300 w-full max-w-sm"

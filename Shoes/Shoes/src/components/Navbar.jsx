@@ -23,8 +23,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/shoes" className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_6px_cyan]">
-              Shoes
+            <Link to="/shop" className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_6px_cyan]">
+              Shop
             </Link>
           </li>
           <li>
