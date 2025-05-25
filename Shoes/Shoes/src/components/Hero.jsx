@@ -31,7 +31,7 @@ export default function Hero() {
         <motion.h1 
           className="text-5xl md:text-7xl font-bold mb-4 text-white"
           style={{
-            fontFamily: "'Creepster', cursive",
+            fontFamily: "'poppins', cursive",
             textShadow: '0 0 20px rgba(255,255,255,0.5), 0 0 40px rgba(0,255,255,0.3)',
           }}
           initial={{ opacity: 0, y: 40 }}
