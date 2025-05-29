@@ -60,7 +60,7 @@ export default function AboutUs() {
               >
                 <h3 className="text-2xl font-semibold mb-4">{value}</h3>
                 <p className="text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fugiat dignissimos accusantium exercitationem provident eveniet neque tempora, eligendi illum, corrupti aut dolor recusandae suscipit pariatur quasi quis ratione ad harum.lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugiat dignissimos accusantium exercitationem provident eveniet neque tempora, eligendi illum, corrupti aut dolor recusandae suscipit pariatur quasi quis ratione ad harum.
                 </p>
               </motion.div>
             ))}
@@ -68,97 +68,97 @@ export default function AboutUs() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="px-8 gap-4 py-16 bg-gradient-to-br from-purple-500 to-pink-500 text-white">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-center mb-8"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-          >
-            What Our Customers Are Saying
-          </motion.h2>
+       <section className="px-4 md:px-8 py-16 bg-gradient-to-br from-purple-500 to-pink-500 text-white">
+  <motion.h2
+    className="text-3xl md:text-4xl font-bold text-center mb-12"
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3 }}
+  >
+    What Our Customers Are Saying
+  </motion.h2>
 
-          <div className="flex justify-center space-x-8">
-            {/* Testimonial 1 */}
-            <motion.div
-              className="max-w-sm bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.6 }}
-            >
-              <p className="text-lg mb-4">
-                "These shoes are a game changer! I've never felt so comfortable while looking so stylish."
-              </p>
-              <div className="text-right font-semibold">- Sarah M.</div>
-            </motion.div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    {/* Testimonial 1 */}
+    <motion.div
+      className="bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.4 }}
+    >
+      <p className="text-lg mb-4">
+        "Hands down the best purchase I made this year. These shoes feel custom-made for my feet."
+      </p>
+      <div className="text-right font-semibold">- Ayesha K.</div>
+    </motion.div>
 
-            {/* Testimonial 2 */}
-            <motion.div
-              className="max-w-sm bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              <p className="text-lg mb-4">
-                "Incredible quality and the most comfortable fit! Perfect for my daily runs and workouts."
-              </p>
-              <div className="text-right font-semibold">- John D.</div>
-            </motion.div>
+    {/* Testimonial 2 */}
+    <motion.div
+      className="bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.5 }}
+    >
+      <p className="text-lg mb-4">
+        "Stylish, lightweight, and durable — I wear them every day and get compliments constantly."
+      </p>
+      <div className="text-right font-semibold">- Leo R.</div>
+    </motion.div>
 
-            {/* Testimonial 3 */}
-            <motion.div
-              className="max-w-sm bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1 }}
-            >
-              <p className="text-lg mb-4">
-                "I love these shoes! Stylish, comfortable, and perfect for all my adventures."
-              </p>
-              <div className="text-right font-semibold">- Emily R.</div>
-            </motion.div>
-          </div>
-          <div className="flex justify-center space-x-8">
-            {/* Testimonial 1 */}
-            <motion.div
-              className="max-w-sm bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.6 }}
-            >
-              <p className="text-lg mb-4">
-                "These shoes are a game changer! I've never felt so comfortable while looking so stylish."
-              </p>
-              <div className="text-right font-semibold">- Sarah M.</div>
-            </motion.div>
+    {/* Testimonial 3 */}
+    <motion.div
+      className="bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.6 }}
+    >
+      <p className="text-lg mb-4">
+        "The support these shoes offer is unmatched. My morning walks have never been this enjoyable."
+      </p>
+      <div className="text-right font-semibold">- Priya S.</div>
+    </motion.div>
 
-            {/* Testimonial 2 */}
-            <motion.div
-              className="max-w-sm bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              <p className="text-lg mb-4">
-                "Incredible quality and the most comfortable fit! Perfect for my daily runs and workouts."
-              </p>
-              <div className="text-right font-semibold">- John D.</div>
-            </motion.div>
+    {/* Testimonial 4 */}
+    <motion.div
+      className="bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.7 }}
+    >
+      <p className="text-lg mb-4">
+        "From gym workouts to weekend outings, these shoes are perfect for every occasion."
+      </p>
+      <div className="text-right font-semibold">- Marcus W.</div>
+    </motion.div>
 
-            {/* Testimonial 3 */}
-            <motion.div
-              className="max-w-sm bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1 }}
-            >
-              <p className="text-lg mb-4">
-                "I love these shoes! Stylish, comfortable, and perfect for all my adventures."
-              </p>
-              <div className="text-right font-semibold">- Emily R.</div>
-            </motion.div>
-          </div>
-        </section>
+    {/* Testimonial 5 */}
+    <motion.div
+      className="bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.8 }}
+    >
+      <p className="text-lg mb-4">
+        "The cushioning and grip are phenomenal. I feel confident and supported with every step."
+      </p>
+      <div className="text-right font-semibold">- Nina L.</div>
+    </motion.div>
+
+    {/* Testimonial 6 */}
+    <motion.div
+      className="bg-black bg-opacity-70 text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.9 }}
+    >
+      <p className="text-lg mb-4">
+        "These kicks elevated my wardrobe game instantly. Plus, they’re so comfy!"
+      </p>
+      <div className="text-right font-semibold">- Ethan J.</div>
+    </motion.div>
+  </div>
+</section>
+
       </div>
       <Footer />
     </>
